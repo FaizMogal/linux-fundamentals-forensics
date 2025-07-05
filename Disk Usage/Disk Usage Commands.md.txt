@@ -1,0 +1,15 @@
+# Disk Usage Commands:-
+
+| Command      | Syntax                     | Description                        | Forensic Usage                                       |
+| ------------ | -------------------------- | ---------------------------------- | ---------------------------------------------------- |
+|  ls          |  ls -lh /path              | Lists files with sizes and details | Identify hidden or unusual files and sizes.          |
+|  mount       |  mount                     | Lists mounted file systems         | Detect unmounted or hidden partitions.               |
+|  cat         |  cat /file                 | Displays file contents             | View contents of files that may contain hidden data. |
+|  ddu         |  ddu /path                 | Deep disk usage analyzer           | Find large, hidden, or orphaned files.               |
+|  hdparm      |  hdparm -I /dev/sda        | Displays disk hardware details     | Verify if disk has been tampered with or replaced.   |
+|  fstrim      |  fstrim /mnt               | Trims SSDs to free unused space    | Check for proper data erasure on SSDs.               |
+|  lsof        |  lsof +L1                  | Lists open, deleted files          | Identify deleted files still open and recoverable.   |
+|  ncdu        |  ncdu /path                | Interactive disk usage analyzer    | Find large, hidden files in directories.             |
+|  xfs_growfs  |  xfs_growfs /dev/sda1      | Expands XFS file system            | Detect hidden data from resized partitions.          |
+|  btrfs       |  btrfs filesystem df /mnt  | Disk usage for BTRFS filesystems   | Investigate hidden snapshots or subvolumes.          |
+                

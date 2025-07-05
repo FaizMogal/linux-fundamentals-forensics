@@ -1,0 +1,15 @@
+# Network Commands:-
+
+
+| Command   |       Syntax      | Description               | Forensic Usage                  |
+|-----------|-------------------|---------------------------|---------------------------------|
+| netstat   | netstat -tulnp    | Show active connections   | Find suspicious listening ports |
+| ss        | ss -tulnp         | Display socket statistics | Identify active services        |
+| ifconfig  | ifconfig          | Show network interfaces   | Verify configurations           |
+| ip        | ip addr show      | Modern IP info            | Confirm assigned IPs            |
+| tcpdump   | tcpdump -i eth0   | Capture packets           | Analyze network traffic         |
+| nmap      | nmap target       | Port scan a host          | Discover open services          |
+| whois     | whois domain      | Get domain info           | Trace domains contacted         | 
+| dig       | dig domain        | DNS lookup                | Inspect DNS queries             | 
+| curl      | curl -I URL       | Fetch HTTP headers        | Check server responses          |
+| traceroute| traceroute host   | Trace route packets take  | Identify network paths          |

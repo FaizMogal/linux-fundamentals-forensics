@@ -1,0 +1,16 @@
+# User Permissions Commands
+
+Critical for examining access and privilege escalation.
+
+| Command |        Syntax           |        Description      |        Forensic Usage        |
+|---------|-------------------------|-------------------------|------------------------------|
+| id      |  id username            | Show user identity      | Validate permissions         |
+| chmod   |  chmod 644 file         | Change file permissions | Detect improper permissions  |
+| chown   |  chown user:group file  | Change ownership        | Reassign ownership securely  |
+| sudo    |  sudo command           | Run as superuser        | Review escalated actions     |
+| su      |  su username            | Switch user             | Track user switches          |
+| groups  |  groups username        | List user groups        | Investigate group memberships|
+| passwd  |  passwd username        | Change password         | Secure compromised accounts  |
+| visudo  |  visudo                 | Edit sudoers safely     | Review sudo rights           |
+| getfacl |  getfacl file           | Show ACLs               | Review access control lists  |
+|  cmp    | cmp file1.txt file2.txt | used for comparing two files byte by byte              |
